@@ -4,12 +4,18 @@
 
 body {
   background-color: #f5f6fa;
+  -webkit-tap-highlight-color: transparent !important;
 }
 
 .app {
   display: flex;
   justify-content: space-evenly;
   padding: 20px;
+}
+
+.app__stats {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .app__dropdown {
@@ -19,18 +25,36 @@ body {
 .app__header {
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   justify-content: space-between;
 }
 
-.app__header > h1 {
+.app__headergroup1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.app__headergroup1 > h1 {
   color: #827d80;
-  font-size: 2rem;
+  font-size: 1.7rem;
+  padding-right: 5px;
+}
+
+.app__headertitle {
+  text-align: center !important;
 }
 
 .app__left {
   flex: 0.7;
   margin: 0px 5px 20px 5px;
+}
+
+.app__settingsbutton {
+  color: #827d80;
+  margin-top: 3px;
+  cursor: pointer;
 }
 
 .app__stats {
@@ -68,8 +92,51 @@ body {
   color: black !important;
 }
 
+.app__news {
+  height: 400px !important;
+}
+
 @media (max-width: 990px) {
   .app {
     flex-direction: column;
   }
+}
+
+@media (max-width: 500px) {
+  .app__headergroup1 > h1 {
+    font-size: 1.12rem;
+  }
+
+  .app__settingsbutton {
+    margin-top: 2px;
+  }
+}
+
+.leaflet-container {
+  border-radius: 15px;
+}
+
+.MuiAppBar-colorPrimary {
+  background-color: #ffffff !important;
+}
+
+.MuiButtonBase-root {
+  color: #827d80 !important;
+}
+
+.MuiTabScrollButton-root {
+  color: #827d80 !important;
+}
+
+.MuiTab-textColorInherit {
+  color: #827d80 !important;
+  opacity: 1 !important;
+}
+
+.PrivateTabIndicator-colorSecondary-11 {
+  background-color: #827d80 !important;
+}
+
+.MuiPaper-elevation4 {
+  box-shadow: none !important;
 }

@@ -4,26 +4,31 @@
   border-radius: 10px !important;
 }
 
+.infoBox:hover {
+  box-shadow: 0 7px 14px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22);
+}
+
 .infoBox:not(:last-child) {
   margin-right: 15px;
 }
 
 .infoBox--selected {
-  border-top: 10px solid #7dd71d;
+  border-bottom: 10px solid rgba(125, 215, 29, 0.7);
+  box-shadow: 0 7px 14px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22) !important;
 }
 
 .infoBox--red {
-  border-color: #cc1034;
+  border-color: rgba(204, 16, 52, 0.7);
 }
 
 .infoBox--sad {
-  border-color: #594d4d;
+  border-color: rgba(89, 77, 77, 0.7);
 }
 
 .infoBox__cases {
   color: lightgreen;
   font-weight: 600;
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   margin-bottom: 0.5rem;
 }
 
@@ -35,15 +40,13 @@
   color: #594d4d;
 }
 
-/* .infoBox__cardcontent {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-} */
-
 .infoBox__total {
   color: #6c757d;
   font-weight: 700 !important;
   font-size: 0.8rem !important;
   margin-top: 15px !important;
+}
+
+.MuiCardContent-root {
+  padding: 13px !important;
 }

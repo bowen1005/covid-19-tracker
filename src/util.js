@@ -35,8 +35,9 @@ export const prettyPrintStat = (stat) =>
     : `${numeral(stat).format("0,0")}`;
 
 export const prettyTotalStat = (stat) =>
-  stat ? `${numeral(stat).format("0,0")}` : "0";
+  stat ? `${numeral(stat).format("0,0.0a")}` : `${numeral(stat).format("0,0")}`;
 
+// ? `${numeral(stat).format("0,0")}` : "0";
 // Draw circles on the map with interactive tooltip
 export const showDataOnMap = (data, casesType = "cases") =>
   data.map((country) => (
