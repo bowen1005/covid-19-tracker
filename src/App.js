@@ -44,7 +44,7 @@ function App() {
   const [displaySettings, setDisplaySettings] = useState(false);
   const [tabValue, setTabValue] = useState(0);
   const [newsURL, setNewsURL] = useState(
-    "http://newsapi.org/v2/top-headlines?" +
+    "https://newsapi.org/v2/top-headlines?" +
       `country=us&` +
       "q=covid&" +
       "category=health&" +
